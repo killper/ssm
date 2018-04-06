@@ -9,7 +9,17 @@ public class Student implements Serializable {
 
     private long id;
 
-    private String stu_name;
+    private String name;
+
+    private Class c;//所属班级
+
+    public Class getC() {
+        return c;
+    }
+
+    public void setC(Class c) {
+        this.c = c;
+    }
 
     public long getId() {
         return id;
@@ -19,11 +29,11 @@ public class Student implements Serializable {
         this.id = id;
     }
 
-    public String getStu_name() {
-        return stu_name;
+    public String getName() {
+        return name;
     }
 
-    public void setStu_name(String stu_name) {
-        this.stu_name = stu_name;
+    public void setName(String name) {
+        this.name = name;
     }
 }
