@@ -3,6 +3,13 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.lz.ideaDemo.ssm.dao.StudentDao">
+<mapper namespace="com.lz.ideaDemo.ssm.dao.StudentMapper">
+    <resultMap id="studentMap" type="com.lz.ideaDemo.ssm.domain.Student">
+        <id property="id" column="stu_id"></id>
+        <result property="name" column="stu_name"></result>
+    </resultMap>
+    <select id="selectAllStudent" resultMap="studentMap">
+        select * from student
+    </select>
 
 </mapper>

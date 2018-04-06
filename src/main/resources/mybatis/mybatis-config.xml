@@ -16,6 +16,6 @@
         </environment>
     </environments>
     <mappers>
-        <package name="com.lz.ideaDemo.ssm.dao"/>
+        <mapper resource="mybatis/mapper/StudentMapper.xml"></mapper>
     </mappers>
 </configuration>
